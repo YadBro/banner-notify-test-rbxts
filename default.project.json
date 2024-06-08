@@ -1,0 +1,86 @@
+{
+	"name": "banner-notify-test-rbxts",
+	"globIgnorePaths": [
+		"**/package.json",
+		"**/tsconfig.json"
+	],
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"TS": {
+				"$path": "out/server"
+			}
+		},
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"rbxts_include": {
+				"$path": "include",
+				"node_modules": {
+					"$className": "Folder",
+					"@rbxts": {
+						"$path": "node_modules/@rbxts"
+					}
+				}
+			},
+			"TS": {
+				"$path": "out/shared"
+			}
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"TS": {
+					"$path": "out/client"
+				}
+			}
+		},
+		"StarterGui": {
+			"ScreenGui": {
+				"$className": "ScreenGui",
+				"TextButton": {
+				"$className": "TextButton",
+				"$properties": {
+					"BackgroundColor3": [255, 255, 255],
+					"Text": "Notify",
+					"Position":{
+					"UDim2": [[0.5, 0], [0.5, 0]]
+					},
+					"AnchorPoint":{
+					"UDim2": [[0.5, 0], [0.5, 0]]
+					},
+					"TextScaled": true,
+					"Size":{
+					"UDim2": [[0.1, 0], [0.05, 0]]
+					}
+				}
+				}
+			}
+		},
+		"Workspace": {
+			"$className": "Workspace",
+			"$properties": {
+				"FilteringEnabled": true
+			},
+			"TouchMe": {
+				"$className": "Part",
+				"$properties": {
+				"Position": [6, 0.6, -18]
+				}
+			}
+		},
+		"HttpService": {
+			"$className": "HttpService",
+			"$properties": {
+				"HttpEnabled": true
+			}
+		},
+		"SoundService": {
+			"$className": "SoundService",
+			"$properties": {
+				"RespectFilteringEnabled": true
+			}
+		}
+	}
+}
